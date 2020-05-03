@@ -2,6 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('#new-task').onsubmit = () => {
 
+        // Form validation
+        if (document.querySelector('#task').value=='') {
+            return false;
+        }
+
         // Create new item for list
         const div = document.createElement('div');
         div.className =  'alert alert-info alert-dismissible';
