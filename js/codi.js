@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Form validation
         if (document.querySelector('#task').value=='') {
+            document.querySelector('#task').focus()
             return false;
         }
 
